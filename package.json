@@ -1,4 +1,5 @@
-{
+{ 
+    "name": "resturant",
     "private": true,
     "type": "module",
     "scripts": {
