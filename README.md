@@ -1,6 +1,6 @@
 # 🍽️ Restaurant Concession & Order Management System
 
-This is a Restaurant Concession & Order Management System built using **Laravel 11**, **Vue.js**, and **Tailwind CSS**. The system efficiently manages concessions, orders, and kitchen workflow, with real-time updates using **Laravel Echo** & **Pusher**. made using mvc architecture and repistory pattern
+This is a Restaurant Concession & Order Management System built using **Laravel 11**, and **Tailwind CSS**. The system efficiently manages concessions, orders, and kitchen workflow, with real-time updates using **Laravel Echo** & **Pusher**. made using mvc architecture and repistory pattern
 
 ## 🛠️ Prerequisites
 
