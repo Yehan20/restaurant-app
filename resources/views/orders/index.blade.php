@@ -41,7 +41,7 @@
 @endsection
 
 @push('scripts')
-    @vite(['resources/js/order.js'])
+  
     <script>
         let timers = [];
         let timerInterval;
