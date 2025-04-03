@@ -9,15 +9,8 @@ export default defineConfig({
         }),
 
     ],
-    server: {
-        https: true, // Force HTTPS
-        cors: {
-
-            origin: [
-                'https://resturant-30m84.kinsta.app',
-            ],
-
-        },
-
+   
+    build: {
+        manifest: true, // Ensures correct asset links in production
     },
 });
