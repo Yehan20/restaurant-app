@@ -12,15 +12,7 @@ Route::get('/', function () {
     return view('welcome');
 })->middleware('guest');
 
-Route::get('/test',function(){
-    $ip = request()->ip();
 
-// Call the ipinfo.io API to get details
-$response = Http::get("http://ipinfo.io/{$ip}/json?token=9113f167aec40e");
-
-// Return the response as an array
-return $response->json();
-});
 
 Route::middleware('auth')->group(function () {
     
