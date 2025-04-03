@@ -26,6 +26,6 @@ class ProcessOrderJob implements ShouldQueue
         $this->order->update(['status' => 'In-Progress']);
 
         event(new OrderStatusUpdate('Order sent to kitchen'));
-        logger('lIVE Update');
+        logger('LIVE Update');
     }
 }
