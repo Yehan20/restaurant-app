@@ -8,6 +8,7 @@ use App\Repositories\Interfaces\ConcessionRepositoryInterface;
 use App\Repositories\Interfaces\OrderRepositoryInterface;
 use App\Repositories\Eloquent\KitchenRepository;
 use App\Repositories\Interfaces\KitchenRepositoryInterface;
+use Illuminate\Routing\UrlGenerator;
 use Illuminate\Support\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider
@@ -27,8 +28,13 @@ class AppServiceProvider extends ServiceProvider
     /**
      * Bootstrap any application services.
      */
-    public function boot(): void
+    public function boot(UrlGenerator $url): void
     {
         //
+
+        if(env('APP_ENV') !== 'local')
+        {
+            $url->forceSchema('https');
+        }
     }
 }
