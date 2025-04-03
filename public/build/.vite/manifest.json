@@ -9,5 +9,11 @@
     "name": "app",
     "src": "resources/js/app.js",
     "isEntry": true
+  },
+  "resources/js/order.js": {
+    "file": "assets/order-DRXrGHl8.js",
+    "name": "order",
+    "src": "resources/js/order.js",
+    "isEntry": true
   }
 }
