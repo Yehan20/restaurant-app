@@ -15,7 +15,7 @@ Route::get('/', function () {
 
 Route::get('/test-ip', function (Request $request) {
     // $location_text = "The IP address {$request->ipinfo->ip}.";
-   dd($request->ip(),request()->header('X-Forwarded-For'));
+   dd($request->ip(),$request->header('X-Forwarded-For'));
 });
 
 // Route::get('/test-ip',function(){
