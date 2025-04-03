@@ -10,7 +10,7 @@ export default defineConfig({
 
     ],
    
-    build: {
-        manifest: true, // Ensures correct asset links in production
-    },
+    // build: {
+    //     manifest: true, // Ensures correct asset links in production
+    // },
 });
